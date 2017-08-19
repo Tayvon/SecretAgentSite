@@ -1,0 +1,245 @@
+html {
+  font-size: 18px;
+  background-color: white;
+}
+
+h1,
+h4 {
+  font-weight: bold;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.window .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+
+
+.window {
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25em;
+}
+
+.announce-box {
+  background-color: black;
+  color: white;
+  width: 20em;
+  padding: 2em 3em;
+  position: relative;
+  top: 9em;
+}
+
+.announce-box h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+.top-header {
+  background-color: black;
+  color: white;
+}
+
+.top-header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 12px 0 12px 1em;
+}
+
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  height: 1.5em;
+  margin-left: 0.5em;
+  margin-right: 1em;
+}
+
+header span {
+  margin-top: 10.56px;
+  margin-top: 0.66rem;
+  margin-bottom: 10.56px;
+  margin-bottom: 0.66rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: helvetica;
+  color: white;
+}
+
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.75em 0;
+  list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+.showcase, .info-pane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+
+.product {
+  width: 30%;
+}
+
+.prod-img {
+  border: 4px solid black;
+  padding: 2em 0;
+  height: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.prod-img img {
+  max-width: 8em;
+}
+
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.specs {
+  width: 35%;
+}
+
+.specs #call-to {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 5em 0;
+  margin-top: 4em;
+}
+
+@media only screen and (max-width: 1024px){
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .window {
+    height: 15em;
+  }
+
+  .announce-box {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+
+  .announce-box h4 {
+    font-size: 0.77rem;
+  }
+
+  .announce-box h1 {
+    font-size: 1rem;
+  }
+
+  .showcase,
+  .info-pane {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info-pane {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
